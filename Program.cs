@@ -1,6 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//--
+
+//builder.Services.AddDbContext<>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("userportal")));
+
+//--
 
 builder.Services.AddControllers();
 
